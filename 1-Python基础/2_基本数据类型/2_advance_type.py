@@ -69,12 +69,20 @@ b = {'3':3, '1':999}
 c = dict(a,**b)
 d = {i:j  for i,j in list(a.items()) + list(b.items())}
 print(c,d)
+print("###########")
 
 
 # set 集合
 a = {i for i in (1,2,3,4,5,22) if i>3 }
 print(a, type(a))
+print("###########")
 
+
+# bool 相关
+a =  0 or 1
+b = 1 and 2
+c = True and True
+print(a, b, c)
 
 
 
