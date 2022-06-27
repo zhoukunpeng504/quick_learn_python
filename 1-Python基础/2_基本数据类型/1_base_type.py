@@ -11,7 +11,7 @@ __author__ = "zkp"
 # int
 a = 1
 b = 2
-print(a/b, a//b)
+print(a/b, a//b) # // 如果结果是小数，则向小的方向取整。
 
 # float
 a = 1.1
@@ -20,7 +20,7 @@ print(a+b)
 
 # str
 # ① 单引号 双引号  三引号的用法。
-a = 'hello world'  # 一般情况用单引号
+a = 'hello world'  # 一般情况用单引号 和 双引号没有区别
 b = "hello world"
 aa = 'hello "world"'  # 如果字符串内含有单引号，那就用双引号
 bb = "hello 'world'"  # 如果字符串内含有双引号，就用单引号

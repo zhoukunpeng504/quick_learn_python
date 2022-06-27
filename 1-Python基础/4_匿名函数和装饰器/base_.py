@@ -38,3 +38,9 @@ def add(a,b):
 c = add(1,2)
 print(c)
 
+a = [1,2]
+
+def tet1(*args, **kwargs):
+	return args
+
+tet1(a)

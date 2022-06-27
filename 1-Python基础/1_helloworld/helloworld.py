@@ -15,7 +15,7 @@ hello_str = 'hello world!'
 print(hello_str)
 
 
-# 形式2， for循环输出。
+# 形式2， 利用for循环逐个字符输出。
 print("######②#####")
 for i in hello_str:
     print(i, end='')

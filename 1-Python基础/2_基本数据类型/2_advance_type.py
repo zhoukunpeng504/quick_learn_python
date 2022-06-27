@@ -33,7 +33,7 @@ print(a+b)
 print("###########")
 
 
-# tuple(元组是不可变的！) 常用方法，
+# tuple(元组是不可变的！) 常用方法
 # 元组的多种写法
 a = 1,2
 b = (1,2)
@@ -42,10 +42,8 @@ def incr_(a, b):
 	b += 1
 	return a,b
 c = incr_(0,1)
-d = tuple((i for i in [1,2,3]  if i<3))  # 类似于列表解析的一种写法, (i for i in [1,2,3]  if i<3) 生成一个生成器对象，其可转为元组或列表
-e = tuple(list((i for i in [1,2,3]  if i<3)))
 f = tuple([1,2])
-print(a == b == c == d == e ==f)
+print(a == b == c == f)
 # 元组常用方法
 print(f.count(1))   # 元组中值等于1的个数
 print(f[::-1], f[:2], f[-2:])
