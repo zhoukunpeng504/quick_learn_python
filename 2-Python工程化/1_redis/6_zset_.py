@@ -1,9 +1,9 @@
 # coding:utf-8
 __author__ = "zkp"
 # create by zkp on 2022/6/26
-# 学习利用redis实现多进程通信。
+# redis zset.（zset 可以理解为 排行榜）
 # redis 资料： https://www.redis.net.cn/tutorial/3501.html
-# redis hash常用操作，如： hset hgetall hdel
+# redis zset简单操作。
 import redis
 
 
@@ -15,14 +15,6 @@ except Exception as e:
 else:
 	print("连接成功")
 
-conn.hset('hash_study', 'student_1', 'lilei')
-conn.hset("hash_study",  'student_2', 'zhangsan')
-
-res = conn.hgetall('hash_study')
-print(res)
-
-conn.hdel('hash_study', 'student_2')
-print(conn.hgetall('hash_study'))
 
 
 
