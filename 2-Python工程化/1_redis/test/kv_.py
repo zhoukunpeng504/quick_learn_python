@@ -16,7 +16,6 @@ except Exception as e:
 else:
 	print("连接成功")
 
-v = random.random()
-while 1:
-	conn.set("nscc", v)
-	time.sleep(1)
+
+res = conn.get('nscc')
+print(res)

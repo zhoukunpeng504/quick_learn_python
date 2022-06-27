@@ -16,6 +16,5 @@ except Exception as e:
 else:
 	print("连接成功")
 
-print(conn.lpop('''list_nscc'''))
 
 

@@ -1,8 +1,8 @@
 # coding:utf-8
 __author__ = "zkp"
 # create by zkp on 2022/6/27
-# 写一个程序， 连接redis 从 list_nscc 中pop一个元素
-# redis 参数：81.70.197.234:26379    密码 helloworld  db 1
+# 写一个程序， 获取redis中db=1中 nscc 的值
+# redis 参数：81.70.197.234:26379   密码 helloworld
 import random
 import redis
 import time
@@ -16,6 +16,8 @@ except Exception as e:
 else:
 	print("连接成功")
 
-print(conn.lpop('''list_nscc'''))
 
-
+v = random.random()
+while 1:
+	conn.set("nscc", v)
+	time.sleep(1)
