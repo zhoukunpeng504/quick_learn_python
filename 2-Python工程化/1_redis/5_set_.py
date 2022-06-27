@@ -4,6 +4,7 @@ __author__ = "zkp"
 # redis set
 # redis 资料： https://www.redis.net.cn/tutorial/3501.html
 # redis 集合简单操作。sadd  smembers  sismember
+# 读取student_score.txt中的信息， 把所有人姓名存如set结构中，然后读取出来并输出； 然后判断王五是否在集合中。
 import redis
 
 
